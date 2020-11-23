@@ -3,6 +3,7 @@
     BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
     sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
     'Noto Color Emoji';
+  --gray-50: ##f7f7f7;
   --gray-300: #d4d4d8;
   --gray-400: #a1a1aa;
   --gray-900: #18181b;
