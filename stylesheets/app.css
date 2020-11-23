@@ -38,3 +38,8 @@ body {
   left: 50%;
   transform: translateX(-50%);
 }
+
+.article__para {
+  font-size: 16px;
+  line-height: 24px;
+}
