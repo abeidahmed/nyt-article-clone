@@ -44,6 +44,12 @@ body {
   transform: translateX(-50%);
 }
 
+.font--subtitle {
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--gray-900);
+}
+
 /** main */
 .main {
   padding: 48px 0;
@@ -109,4 +115,29 @@ body {
   font-weight: 600;
   margin-top: 16px;
   font-size: 18px;
+}
+
+/** more */
+.more__section {
+  margin-top: 16px;
+}
+
+.card__title {
+  font-size: 16px;
+  margin-top: 8px;
+}
+
+.popular__section > * + * {
+  border-top: 1px solid var(--gray-300);
+}
+
+.card__title--spaced {
+  padding: 8px 0;
+  display: block;
+  color: var(--gray-900);
+  text-decoration: none;
+}
+
+.card__title--spaced:hover {
+  text-decoration: underline;
 }
