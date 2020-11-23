@@ -101,3 +101,15 @@ body {
 .article__para:not(:first-of-type) {
   margin-top: 16px;
 }
+
+.article__subtitle {
+  font-weight: 600;
+  margin-top: 16px;
+  font-size: 18px;
+}
+
+.space {
+  display: inline-grid;
+  grid-template-rows: auto;
+  grid-template-columns: 40px 70px 70px;
+}
