@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./stylesheets/reset.css" />
     <link rel="stylesheet" href="./stylesheets/app.css" />
     <link rel="stylesheet" href="./stylesheets/button.css" />
+    <link rel="stylesheet" href="./stylesheets/editor.css" />
     <title>NY Times</title>
   </head>
   <body>
@@ -75,205 +76,222 @@
           </figcaption>
         </figure>
         <article class="article">
-          <div class="article__meta">
-            <a href="#" class="article__meta__author">By Dennis Overbye</a>
-            <div class="article__meta__media">
-              <time datetime="2008-02-14 20:00">March 17, 2014</time>
-              <div>
-                <button class="btn btn__icon">
-                  <svg
-                    width="20"
-                    height="20"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  >
-                    <path
-                      d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
-                    ></path>
-                  </svg>
-                </button>
-                <button class="btn btn__icon">
-                  <svg
-                    width="20"
-                    height="20"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  >
-                    <path
-                      d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"
-                    ></path>
-                  </svg>
-                </button>
-                <button class="btn btn__icon">
-                  <svg
-                    width="20"
-                    height="20"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  >
-                    <path
-                      d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
-                    ></path>
-                    <polyline points="22,6 12,13 2,6"></polyline>
-                  </svg>
-                </button>
-                <button class="btn btn__icon">
-                  <svg
-                    width="20"
-                    height="20"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  >
-                    <path
-                      d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"
-                    ></path>
-                  </svg>
-                </button>
-                <button class="btn btn__icon">
-                  <svg
-                    width="20"
-                    height="20"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  >
-                    <path
-                      d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"
-                    ></path>
-                  </svg>
-                </button>
+          <div class="container container--sm">
+            <div class="article__meta">
+              <a href="#" class="article__meta__author">By Dennis Overbye</a>
+              <div class="article__meta__media">
+                <time datetime="2008-02-14 20:00">March 17, 2014</time>
+                <div>
+                  <button class="btn btn__icon">
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path
+                        d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+                      ></path>
+                    </svg>
+                  </button>
+                  <button class="btn btn__icon">
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path
+                        d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"
+                      ></path>
+                    </svg>
+                  </button>
+                  <button class="btn btn__icon">
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path
+                        d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                      ></path>
+                      <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                  </button>
+                  <button class="btn btn__icon">
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path
+                        d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"
+                      ></path>
+                    </svg>
+                  </button>
+                  <button class="btn btn__icon">
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path
+                        d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"
+                      ></path>
+                    </svg>
+                  </button>
+                </div>
               </div>
             </div>
           </div>
           <section>
-            <p class="article__para">
-              CAMBRIDGE, Mass. — One night late in 1979, an itinerant young
-              physicist named Alan Guth, with a new son and a year’s appointment
-              at Stanford, stayed up late with his notebook and equations,
-              venturing far beyond the world of known physics.
-            </p>
-            <p class="article__para">
-              He was trying to understand why there was no trace of some exotic
-              particles that should have been created in the Big Bang. Instead
-              he discovered what might have made the universe bang to begin
-              with. A potential hitch in the presumed course of cosmic evolution
-              could have infused space itself with a special energy that exerted
-              a repulsive force, causing the universe to swell faster than the
-              speed of light for a prodigiously violent instant.
-            </p>
-            <p class="article__para">
-              If true, the rapid engorgement would solve paradoxes like why the
-              heavens look uniform from pole to pole and not like a jagged,
-              warped mess. The enormous ballooning would iron out all the
-              wrinkles and irregularities. Those particles were not missing, but
-              would be diluted beyond detection, like spit in the ocean.
-            </p>
-            <p class="article__para">
-              “SPECTACULAR REALIZATION,” Dr. Guth wrote across the top of the
-              page and drew a double box around it. On Monday, Dr. Guth’s
-              starship came in. Radio astronomers reported that they had seen
-              the beginning of the Big Bang, and that his hypothesis, known
-              undramatically as inflation, looked right.
-            </p>
-            <p class="article__para">
-              Reaching back across 13.8 billion years to
-              <a href="#">the first sliver of cosmic</a> time with telescopes at
-              the South Pole, a team of astronomers led by John M. Kovac of the
-              Harvard-Smithsonian Center for Astrophysics detected ripples in
-              the fabric of space-time — so-called
-              <a href="#">gravitational waves</a> — the signature of a universe
-              being wrenched violently apart when it was roughly a trillionth of
-              a trillionth of a trillionth of a second old. They are the
-              long-sought smoking-gun evidence of inflation, proof, Dr. Kovac
-              and his colleagues say, that Dr. Guth was correct.
-            </p>
-            <p class="article__para">
-              Inflation has been the workhorse of cosmology for 35 years, though
-              many, including Dr. Guth, wondered whether it could ever be
-              proved.
-            </p>
-            <p class="article__para">
-              If corroborated, Dr. Kovac’s work will stand as a landmark in
-              science comparable to the recent discovery of dark energy pushing
-              the universe apart, or of the Big Bang itself. It would open vast
-              realms of time and space and energy to science and speculation
-            </p>
-            <p class="article__para">
-              Confirming inflation would mean that the universe we see,
-              extending 14 billion light-years in space with its hundreds of
-              billions of galaxies, is only an infinitesimal patch in a larger
-              cosmos whose extent, architecture and fate are unknowable.
-              Moreover, beyond our own universe there might be an endless number
-              of other universes bubbling into frothy eternity, like a pot of
-              pasta water boiling over.
-            </p>
-            <h3 class="article__subtitle">‘As Big as It Gets’</h3>
-            <p class="article__para">
-              In our own universe, it would serve as a window into the forces
-              operating at energies forever beyond the reach of particle
-              accelerators on Earth and yield new insights into gravity itself.
-              Dr. Kovac’s ripples would be the first direct observation of
-              gravitational waves, which, according to Einstein’s theory of
-              general relativity, should ruffle space-time.
-            </p>
-            <p class="article__para">
-              “The South Pole is the closest you can get to space and still be
-              on the ground,” Dr. Kovac said. He has been there 23 times, he
-              said, wintering over in 1994. “I’ve been hooked ever since,” he
-              said
-            </p>
-            <figure class="article__featured-img">
-              <img src="assets/telescope.jpg" alt="telescopes" />
-              <figcaption class="article__feature-caption">
-                The Bicep2 telescope, in the foreground, was used to detect the
-                faint spiraling gravity patterns — the signature of a universe
-                being wrenched violently apart at its birth.
-                <small>Steffen Richter/Associated Press</small>
-              </figcaption>
-            </figure>
+            <div class="container container--sm">
+              <p class="article__para">
+                CAMBRIDGE, Mass. — One night late in 1979, an itinerant young
+                physicist named Alan Guth, with a new son and a year’s
+                appointment at Stanford, stayed up late with his notebook and
+                equations, venturing far beyond the world of known physics.
+              </p>
+              <p class="article__para">
+                He was trying to understand why there was no trace of some
+                exotic particles that should have been created in the Big Bang.
+                Instead he discovered what might have made the universe bang to
+                begin with. A potential hitch in the presumed course of cosmic
+                evolution could have infused space itself with a special energy
+                that exerted a repulsive force, causing the universe to swell
+                faster than the speed of light for a prodigiously violent
+                instant.
+              </p>
+              <p class="article__para">
+                If true, the rapid engorgement would solve paradoxes like why
+                the heavens look uniform from pole to pole and not like a
+                jagged, warped mess. The enormous ballooning would iron out all
+                the wrinkles and irregularities. Those particles were not
+                missing, but would be diluted beyond detection, like spit in the
+                ocean.
+              </p>
+              <p class="article__para">
+                “SPECTACULAR REALIZATION,” Dr. Guth wrote across the top of the
+                page and drew a double box around it. On Monday, Dr. Guth’s
+                starship came in. Radio astronomers reported that they had seen
+                the beginning of the Big Bang, and that his hypothesis, known
+                undramatically as inflation, looked right.
+              </p>
+            </div>
+            <aside class="editor">
+              <h3>Editor's pick</h3>
+              <hr />
+              <div class="editor__list">
+                <a href="#" class="editor__item">
+                  <div>
+                    <img src="assets/nasa.jpg" alt="" />
+                  </div>
+                  <h5>
+                    He Finished His First Marathon.
+                  </h5>
+                </a>
+                <a href="#" class="editor__item">
+                  <div>
+                    <img src="assets/space.jpg" alt="" />
+                  </div>
+                  <h5>
+                    How Do You Have a Ski Season in a Pandemic?
+                  </h5>
+                </a>
+                <a href="#" class="editor__item">
+                  <div>
+                    <img src="assets/great.jpg" alt="" />
+                  </div>
+                  <h5>
+                    John Belushi in Focus: What a New Film Gets Right
+                  </h5>
+                </a>
+              </div>
+            </aside>
+            <div class="container container--sm">
+              <p class="article__para">
+                Reaching back across 13.8 billion years to
+                <a href="#">the first sliver of cosmic</a> time with telescopes
+                at the South Pole, a team of astronomers led by John M. Kovac of
+                the Harvard-Smithsonian Center for Astrophysics detected ripples
+                in the fabric of space-time — so-called
+                <a href="#">gravitational waves</a> — the signature of a
+                universe being wrenched violently apart when it was roughly a
+                trillionth of a trillionth of a trillionth of a second old. They
+                are the long-sought smoking-gun evidence of inflation, proof,
+                Dr. Kovac and his colleagues say, that Dr. Guth was correct.
+              </p>
+              <p class="article__para">
+                Inflation has been the workhorse of cosmology for 35 years,
+                though many, including Dr. Guth, wondered whether it could ever
+                be proved.
+              </p>
+              <figure class="article__featured-img">
+                <img src="assets/telescope.jpg" alt="telescopes" />
+                <figcaption class="article__feature-caption">
+                  The Bicep2 telescope, in the foreground, was used to detect
+                  the faint spiraling gravity patterns — the signature of a
+                  universe being wrenched violently apart at its birth.
+                  <small>Steffen Richter/Associated Press</small>
+                </figcaption>
+              </figure>
+              <p class="article__para">
+                If corroborated, Dr. Kovac’s work will stand as a landmark in
+                science comparable to the recent discovery of dark energy
+                pushing the universe apart, or of the Big Bang itself. It would
+                open vast realms of time and space and energy to science and
+                speculation
+              </p>
+              <p class="article__para">
+                Confirming inflation would mean that the universe we see,
+                extending 14 billion light-years in space with its hundreds of
+                billions of galaxies, is only an infinitesimal patch in a larger
+                cosmos whose extent, architecture and fate are unknowable.
+                Moreover, beyond our own universe there might be an endless
+                number of other universes bubbling into frothy eternity, like a
+                pot of pasta water boiling over.
+              </p>
+              <h3 class="article__subtitle">‘As Big as It Gets’</h3>
+              <p class="article__para">
+                In our own universe, it would serve as a window into the forces
+                operating at energies forever beyond the reach of particle
+                accelerators on Earth and yield new insights into gravity
+                itself. Dr. Kovac’s ripples would be the first direct
+                observation of gravitational waves, which, according to
+                Einstein’s theory of general relativity, should ruffle
+                space-time.
+              </p>
+              <p class="article__para">
+                “The South Pole is the closest you can get to space and still be
+                on the ground,” Dr. Kovac said. He has been there 23 times, he
+                said, wintering over in 1994. “I’ve been hooked ever since,” he
+                said
+              </p>
+            </div>
           </section>
-          <hr />
-          <section class="space">
-            <div class="nasa">
-            <a href="#S">More in Space and Astronomy</a>
-            <img src="assets/space.jpg" alt="space" />
-            <p class="article__para">chine prepares to lunch Msission</p>
-            <img src="assets/great.jpg" alt="great" />
-            <p class="article__para">
-              Arecibo Observation a great Eye on the the coast
-            </p>
-            <img src="assets/nasa.jpg" alt="nasa" />
-            <p class="article__para">Signs of Vocanic Eruption on Mars</p>
-            <hr />
-            <p>Most popular</p>
-            <a href="#">Family History, Uncovered in Quarantine</a>
-            <hr />
-            <a href="#"
-              >1 Woman Is Killed and 6 Others Are Wounded in Brooklyn Mass
-              Shooting</a
-            >
-            <hr />
-            <a href="#">Opinion: Can This Get Any More Pathetic?</a>
-          </section></diV
         </article>
       </div>
     </main>

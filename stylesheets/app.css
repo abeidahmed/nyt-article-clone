@@ -3,9 +3,13 @@ body {
 }
 
 .container {
-  max-width: 72rem;
+  max-width: 80rem;
   padding: 0 24px;
   margin: 0 auto;
+}
+
+.container--sm {
+  max-width: 42rem;
 }
 
 .header {
@@ -47,7 +51,6 @@ body {
 
 /** article */
 .article {
-  max-width: 42rem;
   margin: 32px auto 0 auto;
 }
 
@@ -106,10 +109,4 @@ body {
   font-weight: 600;
   margin-top: 16px;
   font-size: 18px;
-}
-
-.space {
-  display: inline-grid;
-  grid-template-rows: auto;
-  grid-template-columns: 40px 70px 70px;
 }
