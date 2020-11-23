@@ -186,8 +186,9 @@ h6 {
      */
 
 a {
-  color: inherit;
   text-decoration: inherit;
+  color: var(--primary-dark);
+  text-decoration: underline;
 }
 
 /**
