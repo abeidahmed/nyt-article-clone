@@ -31,7 +31,7 @@ To get a local copy up and running follow these simple example steps.
 
 - GitHub: [@taiwo2](https://github.com/taiwo2)
 - Twitter: [@TaiwoAdetona4](https://twitter.com/TaiwoAdetona4)
-- LinkedIn: [Taiwo Adetona](https://www.linkedin.com/in/taiwo-waliyullah-adetona-988898180/)
+- LinkedIn: [Taiwo Adetona](https://www.linkedin.com/in/taiwo-waliyullahi-adetona-988898180/)
 
 ## 🤝 Contributing
 
