@@ -11,6 +11,11 @@
   color: var(--gray-500);
 }
 
+.card__title {
+  font-size: 16px;
+  margin-top: 8px;
+}
+
 .card__title--spaced {
   padding: 8px 0;
   display: block;
