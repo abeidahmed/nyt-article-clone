@@ -20,7 +20,8 @@ body {
   border-bottom: 1px solid var(--gray-300);
   background-color: #fff;
   padding: 0 24px;
-  position: relative;
+  position: sticky;
+  top: 0;
 }
 
 .header__left {
