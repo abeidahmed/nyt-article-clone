@@ -18,6 +18,13 @@
   text-decoration: none;
 }
 
+.editor__item h5 {
+  max-width: 130px;
+  font-size: 14px;
+  font-weight: 500;
+  margin-left: 8px;
+}
+
 .editor__item:hover h5 {
   text-decoration: underline;
 }
@@ -25,11 +32,4 @@
 .editor__item img {
   height: 60px;
   width: auto;
-}
-
-.editor__item h5 {
-  max-width: 130px;
-  font-size: 14px;
-  font-weight: 500;
-  margin-left: 8px;
 }
