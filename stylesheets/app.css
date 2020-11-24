@@ -50,6 +50,11 @@ body {
   text-decoration: none;
 }
 
+.link--secondary {
+  color: var(--gray-500);
+  text-decoration: none;
+}
+
 .link--primary:hover {
   text-decoration: underline;
 }
@@ -125,6 +130,10 @@ body {
   font-weight: 600;
   margin-top: 16px;
   font-size: 18px;
+}
+
+.article__summary {
+  margin-top: 32px;
 }
 
 /** more */
