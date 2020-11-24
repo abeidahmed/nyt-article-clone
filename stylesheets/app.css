@@ -44,6 +44,16 @@ body {
   transform: translateX(-50%);
 }
 
+.link--primary {
+  font-weight: 600;
+  color: var(--gray-900);
+  text-decoration: none;
+}
+
+.link--primary:hover {
+  text-decoration: underline;
+}
+
 .font--subtitle {
   font-weight: 600;
   font-size: 14px;
