@@ -10,12 +10,20 @@
   text-transform: uppercase;
 }
 
+.underline {
+  text-decoration: underline;
+}
+
 .font--semibold {
   font-weight: 600;
 }
 
 .text--gray-500 {
   color: var(--gray-500);
+}
+
+.text--primary {
+  color: var(--primary-dark);
 }
 
 .text--gray-900 {
