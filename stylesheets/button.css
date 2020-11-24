@@ -23,10 +23,6 @@
   color: var(--gray-700);
 }
 
-.btn--uppercased {
-  text-transform: uppercase;
-}
-
 .btn--primary {
   background-color: var(--primary);
   color: #fff;

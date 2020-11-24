@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="./stylesheets/editor.css" />
     <link rel="stylesheet" href="./stylesheets/grid.css" />
     <link rel="stylesheet" href="./stylesheets/card.css" />
+    <link rel="stylesheet" href="./stylesheets/typography.css" />
+    <link rel="stylesheet" href="./stylesheets/spacing.css" />
     <title>NY Times</title>
   </head>
   <body>
@@ -48,7 +50,9 @@
             />
           </svg>
         </button>
-        <a href="#" class="header__title link--primary">Space & cosmos</a>
+        <a href="#" class="header__title text--gray-900 font--semibold">
+          Space & cosmos
+        </a>
       </div>
       <div class="app__logo">
         <svg width="185" height="25">
@@ -58,8 +62,8 @@
         </svg>
       </div>
       <div>
-        <button class="btn btn--uppercased btn--primary">Subscribe now</button>
-        <button class="btn btn--uppercased btn--primary">Log in</button>
+        <button class="btn uppercase btn--primary">Subscribe now</button>
+        <button class="btn uppercase btn--primary">Log in</button>
       </div>
     </header>
     <main class="main">
@@ -67,8 +71,8 @@
         <h1 class="article__title">
           Space Ripples Reveal Big Bang’s Smoking Gun
         </h1>
-        <figure class="article__featured-img">
-          <img src="assets/Friedmanpic.jpg" />
+        <figure>
+          <img class="mx-auto mt-8" src="assets/Friedmanpic.jpg" />
           <figcaption class="article__feature-caption">
             Alan Guth was one of the first physicists to hypothesize the
             existence of inflation, which explains how the universe expanded so
@@ -77,14 +81,22 @@
             <small>Rick Friedman for The New York Times</small>
           </figcaption>
         </figure>
-        <article class="article">
+        <article class="mt-8 mx-auto">
           <div class="container container--sm">
-            <div class="article__meta">
-              <a href="#" class="article__meta__author link--primary"
-                >By Dennis Overbye</a
+            <div class="mb-6">
+              <a
+                href="#"
+                class="font--semibold text--sm text--gray-900 font--semibold"
               >
+                By Dennis Overbye
+              </a>
               <div class="article__meta__media">
-                <time datetime="2008-02-14 20:00">March 17, 2014</time>
+                <time
+                  datetime="2008-02-14 20:00"
+                  class="text--sm text--gray-500"
+                >
+                  March 17, 2014
+                </time>
                 <div>
                   <button class="btn btn__icon">
                     <svg
@@ -206,28 +218,36 @@
               </p>
             </div>
             <aside class="editor">
-              <h3>Editor's pick</h3>
+              <h3 class="text--gray-900 font--semibold text--sm">
+                Editor's pick
+              </h3>
               <hr />
-              <div class="editor__list">
-                <a href="#" class="editor__item">
-                  <div>
-                    <img src="assets/nasa.jpg" alt="" />
-                  </div>
-                  <h5>He Finished His First Marathon.</h5>
-                </a>
-                <a href="#" class="editor__item">
-                  <div>
-                    <img src="assets/space.jpg" alt="" />
-                  </div>
-                  <h5>How Do You Have a Ski Season in a Pandemic?</h5>
-                </a>
-                <a href="#" class="editor__item">
-                  <div>
-                    <img src="assets/great.jpg" alt="" />
-                  </div>
-                  <h5>John Belushi in Focus: What a New Film Gets Right</h5>
-                </a>
-              </div>
+              <ul class="editor__list">
+                <li>
+                  <a href="#" class="editor__item">
+                    <div>
+                      <img src="assets/nasa.jpg" alt="" />
+                    </div>
+                    <h5>He Finished His First Marathon.</h5>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="editor__item">
+                    <div>
+                      <img src="assets/space.jpg" alt="" />
+                    </div>
+                    <h5>How Do You Have a Ski Season in a Pandemic?</h5>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="editor__item">
+                    <div>
+                      <img src="assets/great.jpg" alt="" />
+                    </div>
+                    <h5>John Belushi in Focus: What a New Film Gets Right</h5>
+                  </a>
+                </li>
+              </ul>
             </aside>
             <div class="container container--sm">
               <p class="article__para">
@@ -247,8 +267,12 @@
                 though many, including Dr. Guth, wondered whether it could ever
                 be proved.
               </p>
-              <figure class="article__featured-img">
-                <img src="assets/telescope.jpg" alt="telescopes" />
+              <figure>
+                <img
+                  class="mx-auto mt-8"
+                  src="assets/telescope.jpg"
+                  alt="telescopes"
+                />
                 <figcaption class="article__feature-caption">
                   The Bicep2 telescope, in the foreground, was used to detect
                   the faint spiraling gravity patterns — the signature of a
@@ -272,7 +296,7 @@
                 number of other universes bubbling into frothy eternity, like a
                 pot of pasta water boiling over.
               </p>
-              <h3 class="article__subtitle">‘As Big as It Gets’</h3>
+              <h3 class="text--lg mt-4 font--semibold">‘As Big as It Gets’</h3>
               <p class="article__para">
                 In our own universe, it would serve as a window into the forces
                 operating at energies forever beyond the reach of particle
@@ -290,17 +314,17 @@
               </p>
             </div>
           </section>
-          <section class="container container--sm article__summary">
+          <section class="container container--sm mt-8">
             <small>
               A version of this article appears in print on March 18, 2014,
               Section A, Page 1 of the New York edition with the headline: Space
               Ripples Reveal Big Bang’s Smoking Gun.
-              <a href="#" class="link--secondary">Order Reprints</a> |
-              <a href="#" class="link--secondary">Today's paper</a> |
-              <a href="#" class="link--secondary">Subscribe</a>
+              <a href="#" class="text--gray-500">Order Reprints</a> |
+              <a href="#" class="text--gray-500">Today's paper</a> |
+              <a href="#" class="text--gray-500">Subscribe</a>
             </small>
             <div class="article__meta__media">
-              <button class="btn btn--primary btn--uppercased">
+              <button class="btn btn--primary uppercase">
                 Read 615 comments
               </button>
               <div>
@@ -389,10 +413,12 @@
             </div>
           </section>
         </article>
-        <div class="grid grid grid__cols-12 grid__section grid__col--gap--lg">
+        <div class="grid grid grid__cols-12 mt-10 grid__col--gap--lg">
           <section class="col-9">
-            <h4 class="font--subtitle">More in Space and Astronomy</h4>
-            <div class="more__section grid grid__cols-3 grid__col--gap">
+            <h4 class="text--gray-900 font--semibold text--sm">
+              More in Space and Astronomy
+            </h4>
+            <div class="mt-4 grid grid__cols-3 grid__col--gap">
               <a href="#" class="card col-1">
                 <img src="assets/great.jpg" alt="" />
                 <h4 class="card__title">
@@ -414,7 +440,7 @@
             </div>
           </section>
           <section class="col-3">
-            <h4 class="font--subtitle">Most Popular</h4>
+            <h4 class="text--gray-900 font--semibold text--sm">Most Popular</h4>
             <div class="popular__section">
               <a href="#" class="card__title card__title--spaced">
                 China to Collect Moon Rocks in a Mission Launching Soon
@@ -435,7 +461,7 @@
         </div>
       </div>
     </main>
-    <footer class="container">
+    <footer class="container mb-6">
       <div>
         <svg width="185" height="25">
           <path
@@ -443,44 +469,52 @@
           />
         </svg>
       </div>
-      <section class="grid grid__cols-3 grid__section">
+      <section class="grid grid__cols-3 mt-10">
         <ul class="col-1">
-          <p>News</p>
-          <li><a href="#" class="link--primary">Home Page</a></li>
-          <li><a href="#" class="link--primary">World</a></li>
-          <li><a href="#" class="link--primary">US</a></li>
-          <li><a href="#" class="link--primary">Politics</a></li>
-          <li><a href="#" class="link--primary">Election Results</a></li>
-          <li><a href="#" class="link--primary">New York</a></li>
-          <li><a href="#" class="link--primary">Business</a></li>
-          <li><a href="#" class="link--primary">Tech</a></li>
-          <li><a href="#" class="link--primary">science</a></li>
-          <li><a href="#" class="link--primary">Sport</a></li>
-          <li><a href="#" class="link--primary">Obituary</a></li>
-          <li><a href="#" class="link--primary">Todays Paper</a></li>
+          <p class="uppercase text--sm font--semibold">News</p>
+          <li><a href="#" class="text--sm">Home Page</a></li>
+          <li><a href="#" class="text--sm">World</a></li>
+          <li><a href="#" class="text--sm">US</a></li>
+          <li><a href="#" class="text--sm">Politics</a></li>
+          <li>
+            <a href="#" class="text--sm">Election Results</a>
+          </li>
+          <li><a href="#" class="text--sm">New York</a></li>
+          <li><a href="#" class="text--sm">Business</a></li>
+          <li><a href="#" class="text--sm">Tech</a></li>
+          <li><a href="#" class="text--sm">science</a></li>
+          <li><a href="#" class="text--sm">Sport</a></li>
+          <li><a href="#" class="text--sm">Obituary</a></li>
+          <li><a href="#" class="text--sm">Todays Paper</a></li>
         </ul>
         <ul class="col-1">
-          <p>Opinion</p>
-          <li><a href="#" class="link--primary">Todays Opinions</a></li>
-          <li><a href="#" class="link--primary">Op-Ed Columnist</a></li>
-          <li><a href="#" class="link--primary">Editorial</a></li>
-          <li><a href="#" class="link--primary">Op-Ed Contributors</a></li>
-          <li><a href="#" class="link--primary">Letters</a></li>
-          <li><a href="#" class="link--primary">Sunday Reviews</a></li>
-          <li><a href="#" class="link--primary">Video: Opinion</a></li>
+          <p class="uppercase text--sm font--semibold">Opinion</p>
+          <li>
+            <a href="#" class="text--sm">Todays Opinions</a>
+          </li>
+          <li>
+            <a href="#" class="text--sm">Op-Ed Columnist</a>
+          </li>
+          <li><a href="#" class="text--sm">Editorial</a></li>
+          <li>
+            <a href="#" class="text--sm">Op-Ed Contributors</a>
+          </li>
+          <li><a href="#" class="text--sm">Letters</a></li>
+          <li><a href="#" class="text--sm">Sunday Reviews</a></li>
+          <li><a href="#" class="text--sm">Video: Opinion</a></li>
         </ul>
         <ul class="col-1">
-          <p>Arts</p>
-          <li><a href="#" class="link--primary">Todays Art</a></li>
-          <li><a href="#" class="link--primary">Art $ Design</a></li>
-          <li><a href="#" class="link--primary">Books</a></li>
-          <li><a href="#" class="link--primary">Dance</a></li>
-          <li><a href="#" class="link--primary">Movies</a></li>
-          <li><a href="#" class="link--primary">Music</a></li>
-          <li><a href="#" class="link--primary">Pop Culture</a></li>
-          <li><a href="#" class="link--primary">Television</a></li>
-          <li><a href="#" class="link--primary">Theater</a></li>
-          <li><a href="#" class="link--primary">Video:Arts</a></li>
+          <p class="uppercase text--sm font--semibold">Arts</p>
+          <li><a href="#" class="text--sm">Todays Art</a></li>
+          <li><a href="#" class="text--sm">Art $ Design</a></li>
+          <li><a href="#" class="text--sm">Books</a></li>
+          <li><a href="#" class="text--sm">Dance</a></li>
+          <li><a href="#" class="text--sm">Movies</a></li>
+          <li><a href="#" class="text--sm">Music</a></li>
+          <li><a href="#" class="text--sm">Pop Culture</a></li>
+          <li><a href="#" class="text--sm">Television</a></li>
+          <li><a href="#" class="text--sm">Theater</a></li>
+          <li><a href="#" class="text--sm">Video:Arts</a></li>
         </ul>
       </section>
     </footer>
