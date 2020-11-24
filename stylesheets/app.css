@@ -140,27 +140,3 @@ body {
 .popular__section > * + * {
   border-top: 1px solid var(--gray-300);
 }
-
-.card {
-  text-decoration: none;
-}
-
-.card h4 {
-  color: var(--gray-900);
-  transition: all 100ms ease-in-out;
-}
-
-.card:hover h4 {
-  color: var(--gray-500);
-}
-
-.card__title--spaced {
-  padding: 8px 0;
-  display: block;
-  color: var(--gray-900);
-  text-decoration: none;
-}
-
-.card__title--spaced:hover {
-  text-decoration: underline;
-}
