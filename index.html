@@ -14,6 +14,10 @@
     <link rel="stylesheet" href="./stylesheets/article.css" />
     <link rel="stylesheet" href="./stylesheets/typography.css" />
     <link rel="stylesheet" href="./stylesheets/spacing.css" />
+    <link rel="stylesheet" href="./stylesheets/input.css" />
+    <link rel="stylesheet" href="./stylesheets/flex.css" />
+    <link rel="stylesheet" href="./stylesheets/select.css" />
+    <link rel="stylesheet" href="./stylesheets/checkbox.css" />
     <title>NY Times</title>
   </head>
   <body>
@@ -427,6 +431,91 @@
                   </svg>
                 </button>
               </div>
+            </div>
+            <hr class="my-8 text--gray-500" />
+            <div>
+              <h3 class="text--lg font--semibold">Add a comment</h3>
+              <form action="#" class="mt-4">
+                <section class="flex space-x-5">
+                  <div class="flex-1">
+                    <label
+                      for="full-name"
+                      class="text--sm text--gray-700 font--medium"
+                    >
+                      Full name
+                    </label>
+                    <input
+                      id="full-name"
+                      type="text"
+                      class="input mt-1"
+                      required
+                      maxlength="20"
+                    />
+                  </div>
+                  <div class="flex-1">
+                    <label
+                      for="email"
+                      class="text--sm text--gray-700 font--medium"
+                    >
+                      Email address
+                    </label>
+                    <input
+                      id="email"
+                      type="email"
+                      class="input mt-1"
+                      required
+                      maxlength="20"
+                    />
+                  </div>
+                </section>
+                <section class="mt-4">
+                  <label
+                    for="question"
+                    class="text--sm text--gray-700 font--medium"
+                  >
+                    What is your overall opinion about this article
+                  </label>
+                  <select id="question" class="input input__select mt-1">
+                    <option value="positive">Positive</option>
+                    <option value="negative">Negative</option>
+                    <option value="neutral">Neutral</option>
+                  </select>
+                </section>
+                <section class="mt-4">
+                  <div>
+                    <label
+                      for="comment"
+                      class="text--sm text--gray-700 font--medium"
+                    >
+                      Your comment
+                    </label>
+                    <textarea
+                      id="comment"
+                      rows="4"
+                      class="input mt-1"
+                      placeholder="Type your comment here…"
+                      required
+                      maxlength="200"
+                    ></textarea>
+                  </div>
+                </section>
+                <section class="mt-4">
+                  <label class="flex items-center">
+                    <input type="checkbox" class="input__checkbox" checked />
+                    <span class="ml-2 text--sm text--gray-700 font--medium">
+                      I want to subscribe to the newsletter
+                    </span>
+                  </label>
+                </section>
+                <section class="mt-8">
+                  <button
+                    type="submit"
+                    class="btn btn--primary btn--lg uppercase"
+                  >
+                    Post comment
+                  </button>
+                </section>
+              </form>
             </div>
           </div>
         </article>
