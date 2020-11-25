@@ -1,0 +1,18 @@
+form {
+  margin: auto;
+  width: 300px;
+  border: 1px solid black;
+}
+
+ul {
+  list-style: none;
+}
+
+label {
+  display: inline-block;
+  text-align: right;
+  margin-bottom: 7px;
+}
+.options {
+  width: 300px;
+}

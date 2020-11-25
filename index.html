@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="./stylesheets/article.css" />
     <link rel="stylesheet" href="./stylesheets/typography.css" />
     <link rel="stylesheet" href="./stylesheets/spacing.css" />
+    <link rel="stylesheet" href="stylesheets/Taiwoform.css" />
     <title>NY Times</title>
   </head>
   <body>
@@ -428,6 +429,70 @@
                 </button>
               </div>
             </div>
+            <form action="">
+              <ul>
+                <li>
+                  <label for="name"> Name: </label>
+                  <input type="text" name="user_name" id="name" required />
+                </li>
+                <li>
+                  <label for="email"> Email: </label>
+                  <input type="email" name="user_name" id="email" required />
+                </li>
+                <li class="test">
+                  <label for="Comment">Comments:</label><br />
+                  <textarea
+                    name="post_comments"
+                    id="comments"
+                    cols="20"
+                    rows="10"
+                    placeholder="Type your comment here…"
+                  >
+                  </textarea>
+                </li>
+                <li>
+                  <label for="options">
+                    <p class="option">
+                      What is your overall opinion about this article with 3
+                      options
+                    </p> </label
+                  ><br />
+
+                  <input
+                    type="radio"
+                    name=""
+                    id="options"
+                    value="postive"
+                    checked
+                  />
+                  Positive
+                  <input
+                    type="radio"
+                    name=""
+                    id="options"
+                    value="negative"
+                    checked
+                  />
+                  Negative
+                  <input
+                    type="radio"
+                    name=""
+                    id="options"
+                    value="neutral"
+                    checked
+                  />
+                  Neutral
+                </li>
+                <li>
+                  <label for="check"></label>
+                  <input type="checkbox" name="check" id="" />I want to
+                  subscribe to the newsletter”
+                </li>
+                <li>
+                  <button type="submit">send</button>
+                </li>
+              </ul>
+            </form>
           </div>
         </article>
         <div class="grid grid grid__cols-12 mt-10 grid__col--gap--lg">
