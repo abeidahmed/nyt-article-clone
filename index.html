@@ -432,66 +432,60 @@
             <form action="">
               <ul>
                 <li>
-                  <label for="name"> Name: </label>
+                  <label for="name">Name:</label>
                   <input type="text" name="user_name" id="name" required />
                 </li>
                 <li>
-                  <label for="email"> Email: </label>
+                  <label for="email">Email:</label>
                   <input type="email" name="user_name" id="email" required />
                 </li>
-                <li class="test">
-                  <label for="Comment">Comments:</label><br />
-                  <textarea
-                    name="post_comments"
-                    id="comments"
-                    cols="20"
-                    rows="10"
-                    placeholder="Type your comment here…"
-                  >
-                  </textarea>
+                <li>
+                  <label for="Comment">Comments:</label>
+                  <br>
+                  <textarea name="text_area" id="comments" cols="30" minlength="50" maxlength="250" rows="10" placeholder="Type your comment here…"></textarea>
+                </li>
+                  <p>What is your overall opinion about this article with 3
+                      options</p>
+                  <ul>
+                    <li>
+                  <input
+                    type="radio"
+                    name="drone"
+                    id="positive
+                    value="postive"
+
+                  />
+                  <label for="positve">Positive</label>
                 </li>
                 <li>
-                  <label for="options">
-                    <p class="option">
-                      What is your overall opinion about this article with 3
-                      options
-                    </p> </label
-                  ><br />
-
                   <input
                     type="radio"
-                    name=""
-                    id="options"
-                    value="postive"
-                    checked
-                  />
-                  Positive
-                  <input
-                    type="radio"
-                    name=""
-                    id="options"
+                    name="drone"
+                    id="negative"
                     value="negative"
-                    checked
+
                   />
-                  Negative
+                  <label for="negative">Negative</label>
+                </li>
+                  <li>
                   <input
                     type="radio"
-                    name=""
-                    id="options"
+                    name="drone"
+                    id="neutral"
                     value="neutral"
-                    checked
+
                   />
-                  Neutral
+                  <label for="neutral">Neutral</label>
                 </li>
                 <li>
                   <label for="check"></label>
-                  <input type="checkbox" name="check" id="" />I want to
+                  <input type="checkbox" name="check" id="check" />I want to
                   subscribe to the newsletter”
                 </li>
-                <li>
-                  <button type="submit">send</button>
-                </li>
-              </ul>
+                </ul>
+                  <button type="submit" class="form_btn">send</button>
+
+
             </form>
           </div>
         </article>
