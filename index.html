@@ -429,7 +429,7 @@
                 </button>
               </div>
             </div>
-            <form action="">
+            <form action="#">
               <ul>
                 <li>
                   <label for="name">Name:</label>
@@ -441,19 +441,28 @@
                 </li>
                 <li>
                   <label for="Comment">Comments:</label>
-                  <br>
-                  <textarea name="text_area" id="comments" cols="30" minlength="50" maxlength="250" rows="10" placeholder="Type your comment here…"></textarea>
+                  <br />
+                  <textarea
+                    name="text_area"
+                    id="comments"
+                    cols="30"
+                    minlength="50"
+                    maxlength="250"
+                    rows="10"
+                    placeholder="Type your comment here…"
+                  ></textarea>
                 </li>
-                  <p>What is your overall opinion about this article with 3
-                      options</p>
-                  <ul>
-                    <li>
+              </ul>
+
+              What is your overall opinion about this article with 3 options
+
+              <ul>
+                <li>
                   <input
                     type="radio"
                     name="drone"
-                    id="positive
+                    id="positive"
                     value="postive"
-
                   />
                   <label for="positve">Positive</label>
                 </li>
@@ -463,17 +472,15 @@
                     name="drone"
                     id="negative"
                     value="negative"
-
                   />
                   <label for="negative">Negative</label>
                 </li>
-                  <li>
+                <li>
                   <input
                     type="radio"
                     name="drone"
                     id="neutral"
                     value="neutral"
-
                   />
                   <label for="neutral">Neutral</label>
                 </li>
@@ -482,10 +489,8 @@
                   <input type="checkbox" name="check" id="check" />I want to
                   subscribe to the newsletter”
                 </li>
-                </ul>
-                  <button type="submit" class="form_btn">send</button>
-
-
+              </ul>
+              <button type="submit" class="form_btn">send</button>
             </form>
           </div>
         </article>
