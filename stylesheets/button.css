@@ -31,3 +31,8 @@
 .btn--primary:hover {
   background-color: var(--primary-dark);
 }
+
+.btn--lg {
+  padding: 6px 12px;
+  font-size: 13px;
+}
